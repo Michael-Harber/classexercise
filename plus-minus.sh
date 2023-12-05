@@ -1,6 +1,6 @@
 # Finding lines that start with + or -
-cat pattern.txt | egrep ^[+\-]
-echo $?
+# cat plus-minus.txt | egrep ^[+\-]
+# echo $?
 
 # additional test for pattern.txt
 # cat pattern.txt | egrep [+\-]
@@ -12,3 +12,20 @@ echo $?
 
 
 
+PATTERN=^[+\-]
+
+
+
+failure=0
+egrep "$PATTERN" should-match-plusminus.txt
+echo $?
+failure=1
+
+failure=0
+if egrep -v "$PATTERN" should-match-plusminus.txt
+then
+echo "failure"
+failure=1
+else
+echo "success on should match"
+fi
