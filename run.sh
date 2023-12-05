@@ -25,7 +25,7 @@ echo $?
 
 
 # negative test for git-log.txt
-cat git-log.txt | egrep ^[Date]
+cat git-log.txt | egrep [Date]
 
 
 # negative test for pattern.txt
