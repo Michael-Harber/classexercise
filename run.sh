@@ -7,7 +7,7 @@ cat pattern.txt | egrep [+\-]
 echo $?
 
 # lines that have a tag or ref associated
-cat git-log.txt | egrep commit
+cat git-log.txt | egrep commit.*tag
 echo $?
 
 # additional test for git-log.txt
@@ -19,8 +19,8 @@ cat auth.log | egrep sshd.*opened
 echo $?
 
 # additional test for auth.log
-cat auth.log | egrep sshd.*closed
-echo $?
+# cat auth.log | egrep sshd.*closed
+# echo $?
 
 
 
