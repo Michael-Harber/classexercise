@@ -16,10 +16,10 @@ PATTERN=^[+\-]
 
 
 
-failure=0
+
 egrep "$PATTERN" should-match-plusminus.txt
-echo $?
-failure=1
+
+
 
 failure=0
 if egrep -v "$PATTERN" should-match-plusminus.txt
