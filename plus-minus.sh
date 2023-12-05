@@ -29,3 +29,7 @@ failure=1
 else
 echo "success on should match"
 fi
+
+echo $?
+
+exit $failure
