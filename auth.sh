@@ -11,7 +11,7 @@ PATTERN=sshd.*opened
 
 
 
-
+echo; echo "This is what I found"
 egrep "$PATTERN" should-match-auth.txt
 
 

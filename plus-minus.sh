@@ -14,9 +14,7 @@
 
 PATTERN=^[+\-]
 
-
-
-
+echo; echo "This is what I found"
 egrep "$PATTERN" should-match-plusminus.txt
 
 
@@ -27,9 +25,10 @@ then
 echo "failure"
 failure=1
 else
-echo "success on should match"
+echo "success on should-match"
 fi
 
 echo $?
 
 exit $failure
+

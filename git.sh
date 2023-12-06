@@ -14,7 +14,7 @@ PATTERN=commit.*tag
 
 
 
-
+echo; echo "This is what I found"
 egrep "$PATTERN" should-match-git.txt
 
 
