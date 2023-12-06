@@ -14,10 +14,6 @@ PATTERN=commit.*tag
 
 
 
-echo; echo "This is what I found"
-egrep "$PATTERN" should-match-git.txt
-
-
 
 failure=0
 if egrep -v "$PATTERN" should-match-git.txt
@@ -27,6 +23,18 @@ failure=1
 else
 echo "success on should match"
 fi
+
+failure=0
+if egrep  "$PATTERN" should-not-match-git.txt
+then
+echo "failure"
+failure=1
+else
+echo "success on should-not match"
+fi
+
+echo; echo "This is what I found"
+egrep "$PATTERN" should-match-git.txt
 
 echo $?
 
