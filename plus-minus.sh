@@ -12,7 +12,7 @@
 
 
 
-PATTERN=^[+\-]
+PATTERN=^[+-]
 
 
 
