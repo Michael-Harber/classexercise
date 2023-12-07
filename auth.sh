@@ -7,7 +7,7 @@
 # echo $?
 
 
-PATTERN=sshd.*opened
+PATTERN=New.*session
 
 
 
