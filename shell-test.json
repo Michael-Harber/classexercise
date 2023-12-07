@@ -1,26 +1,26 @@
 {
     "git": {
-        "regex": "",
-        "should-match": ".txt",
-        "should-not-match": ".txt",
+        "regex": "commit.*tag",
+        "should-match": "should-match-git.txt",
+        "should-not-match": "should-not-match.txt",
         "test-include": null,
         "test-exclude": null,
-        "test-combined": "test-git.sh"
+        "test-combined": "git.sh"
     },
     "plus-minus": {
-        "regex": "",
-        "should-match": ".txt",
-        "should-not-match": ".txt",
+        "regex": "^[+/-]",
+        "should-match": "should-match-plusminus.txt",
+        "should-not-match": "should-not-match-plusminus.txt",
         "test-include": null,
         "test-exclude": null,
-        "test-combined": "test-plus-minus.sh"
+        "test-combined": "plus-minus.sh"
     },
     "auth": {
-        "regex": "",
-        "should-match": ".txt",
-        "should-not-match": ".txt",
+        "regex": "New.*session",
+        "should-match": "should-match-auth.txt",
+        "should-not-match": "should-not-match-auth.txt",
         "test-include": null,
         "test-exclude": null,
-        "test-combined": "test-auth.sh"
+        "test-combined": "auth.sh"
     }
 }
