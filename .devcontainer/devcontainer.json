@@ -1,6 +1,6 @@
 {
     "name": "Basic Jenkins CI",
-    "dockerComposeFile": "docker-compse.yml",
+    "dockerComposeFile": "docker-compose.yml",
     "service": "jenkins",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "forwardPorts": [8080, 50000]
